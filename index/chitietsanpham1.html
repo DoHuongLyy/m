@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chi tiết sản phẩm</title>
+    <meta charset="urf-8">
+    <link rel="stylesheet" href="/css/Trang chu.css">
+    <link rel="stylesheet" href="/css/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="/css/container.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/chitietsanpham.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <script src="/js/jqueryy-3.6.0.min.js"></script>
+    <script src="/js/trangchu.js"></script>
+
+
+</head>
+
+<body style="margin: 0;" onload="back()">
+    <div class="app">
+        <header class="header">
+            <div class="grid" style="color: white;">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                            <div class="QR-code">
+                                
+                                <div class="QR-app">
+                                    <a href="" class="down-app">
+                                        <img src="/hình ảnh/app store.png" class="img-app" alt="">
+                                    </a>
+                                    <a href="" class="down-app">
+                                        <img src="/hình ảnh/google.png" class="img-app" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        
+                        <li class="header__navbar-item">
+                            <span style="cursor: text;">Kết nối</span>
+                            <a href="" class="icon-link"><i class="icon fab fa-facebook-messenger"></i></a>
+                            <a href="" class="icon-link"><i class="icon fab fa-instagram-square"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+
+                            <a href="" class="header__navbar-item-link icon-link">
+                                <i class="icon fas fa-bell"></i>
+                                Thông Báo
+                            </a>
+                            <div class="header-noti">
+                                <header class="noti">
+                                    <h3
+                                        style="color: #999; margin-left: 12px; font-weight: 500; font-size: 0.9rem; cursor: text;">
+                                        Thông Báo Mới Nhận</h3>
+                                </header>
+                                <!-- <ul class="noti-list">
+                                    <li class="noti-item">
+                                        <a href="" class="noti-link">
+                                            <span><img src="/hình ảnh/anh1.jpg" class="noti-img" alt=""></span>
+                                            <div class="noti-info">
+                                                <span class="noti-name">Nước hoa OHUI chính hãng</span>
+                                                <span class="noti-descriotion">Mô tả nước hoa chính hãng OHUI</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="noti-item">
+                                        <a href="" class="noti-link">
+                                            <span><img src="/hình ảnh/anh1.jpg" class="noti-img" alt=""></span>
+                                            <div class="noti-info">
+                                                <span class="noti-name">Tinh dầu nước hoa</span>
+                                                <span class="noti-descriotion">Mô tả tinh dầu nước hoa</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="noti-item">
+                                        <a href="" class="noti-link">
+                                            <span><img src="/hình ảnh/anh1.jpg" class="noti-img" alt=""></span>
+                                            <div class="noti-info">
+                                                <span class="noti-name">Nước hoa OHUI chính hãng xuất xứ từ châu
+                                                    Âu</span>
+                                                <span class="noti-descriotion">Mô tả nước hoa chính hãng OHUI</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul> -->
+                                <footer class="footer-noti">
+                                    <a href="" class="show-all">Xem Tất Cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link icon-link">
+                                <i class="icon fas fa-question-circle"></i>
+                                Hỗ Trợ
+                            </a>
+                        </li>
+                        <li class="header__navbar-item " style="font-weight: 500;"><span onclick="pdk()"
+                                id="noti-dk">Đăng ký</span></li>|
+                        <li class="header__navbar-item " style="font-weight: 500;"><span onclick="pdn()"
+                                id="noti-dn">Đăng nhập</span></li>
+                    </ul>
+                </nav>
+
+                <div class="header-with-search">
+                    <div class="header-logo">
+                        <a href="/index/Trang chu.html">
+
+                            <img src="/hình ảnh/logo'.png" class="logo" alt="">
+                        </a>
+                    </div>
+                    <div class="header-search">
+                        <input type="text" class="search-input" placeholder="Tìm kiếm">
+                        <button class="btn-search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+
+                    <div class="header-catch">
+                        <a href="/index/cart.html">
+                            <i class="fas fa-shopping-cart"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="app-container">
+            <div class="grid" style="background-color: white; width: 1100px;">
+                <div style="height: 40px; background-color: #F5F5F5"></div>
+                <div class="item-over">
+                    <div class="item-over-img">
+                        <div class="over-img">
+                            <div class="img-top">
+                                <img src="/hình ảnh/nam.jpg" alt="" class="img-sp">
+                            </div>
+                            <!-- <div class="img-bot">
+                                <div class="">
+                                    <img src="/hình ảnh/nam1.jpg" alt="">
+                                </div>
+                                <div class="box1">
+                                    <img src="/hình ảnh/nam1.jpg" alt="">
+                                </div>
+                                <div class="box1">
+                                    <img src="/hình ảnh/nam1.jpg" alt="">
+                                </div>
+                                <div class="box1">
+                                    <img src="/hình ảnh/nam1.jpg" alt="">
+                                </div>
+                                <div class="box1">
+                                    <img src="/hình ảnh/nam1.jpg" alt="">
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="item-over-text">
+                        <div class="item-over-text1">
+                            <div class="item-over-text-name">
+                                <h3 style="color:rgba(0, 0, 0, 0.65)" class="name-sp">Tinh dầu nước hoa CODEDECO KILL THIS LOVE – 100ml</h3>
+                            </div>
+                            <div class="item-over-text-rate">
+                                <div>
+                                    <span style="color:#d0011b; text-decoration: underline;">5.0</span>
+                                    <i class="fas fa-star star1"></i>
+                                    <i class="fas fa-star star1"></i>
+                                    <i class="fas fa-star star1"></i>
+                                    <i class="fas fa-star star1"></i>
+                                    <i class="fas fa-star star1"></i>
+                                </div>
+                                <div style="margin-left: 40px;">26 Đã Bán</div>
+
+                            </div>
+                            <div class="item-over-text-price">
+                                <div class="item-over-text-price-over">
+
+                                   
+                                    <div class="item-over-text-price-new">
+                                        <div>
+                                            <span style="color:black; font-size: 1.5rem;"
+                                                class="new-price">1.290.000₫</span>
+                                        </div>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="SLSP">
+                                <p style="color: rgba(0, 0, 0, 0.5); font-size: 0.95rem;">Số Lượng</p>
+                                <div class="btn_SLSP">
+                                    <button class="p-btn minus">
+
+                                        <i class="fas fa-minus"></i>
+                                    </button>
+                                    <input type="text" value="1" class="input-slsp soluong">
+                                    <button class="p-btn plus">
+                                        <i class="fas fa-plus"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="item-over-text-cart">
+
+                                <div style="margin-top: 15px">
+                                    <div class="item-over-text-cart-over">
+                                        <button onclick="addToCart({id:'06',image:'/hình ảnh/nam.jpg', price:1290000, name:'Tinh dầu nước hoa CODEDECO KILL THIS LOVE – 100ml'})" class="btn item-over-text-cart-left"style="width: 182px;height: 46px;  border: 1px solid #d0011b; color:#d0011b;">
+                                            
+                                            <i class="fas fa-shopping-cart" style="font-size: 1rem; " ></i>
+                                            Thêm Vào Giỏ Hàng
+                                        </button>
+                                        <a href="/index/cart.html">
+
+                                            <button onclick="addToCart({id:'06',image:'/hình ảnh/nam.jpg', price:1290000, name:'Tinh dầu nước hoa CODEDECO KILL THIS LOVE – 100ml'})" style="width: 182px;height: 46px;  border: 1px solid #d0011b;" class="btn item-over-text-cart-right">
+                                                Mua Ngay
+                                            </button>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-over-text-share">
+                                <div>
+                                    Chia Sẻ:
+                                    <a href="" style="text-decoration: none;">
+                                        <i class="fab fa-facebook-messenger"></i>
+                                    </a>
+                                    <a href="" style="text-decoration: none;">
+                                        <i class="fab fa-facebook"></i>
+                                    </a>
+                                    <a href="" style="text-decoration: none;">
+                                        <i class="fab fa-discord"></i>
+                                    </a>
+                                    <a href="" style="text-decoration: none;">
+                                        <i class="fab fa-twitter-square"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div style="height: 20px; background-color: #F5F5F5"></div>
+                <div class="describe">
+                    <div class="chi-tiet">
+
+                        <div
+                            style="background-color: #F5F5F5; height:3rem; width: 70%; padding-left: 2rem; display: flex;">
+                            <h3 style="font-weight: 500; ">CHI TIẾT SẢN PHẨM</h3>
+                        </div>
+                        <div style="margin-left: 2rem;">
+
+                            <div class="danh-muc">
+                                <label style="width: 6rem; color: rgba(0, 0, 0, 0.4);">Thương hiệu</label>
+                                <div style="font-size: 0.9rem; padding-left: 4rem;">CODEDECO</div>
+                            </div>
+                            <div class="danh-muc">
+                                <label style="width: 6rem; color: rgba(0, 0, 0, 0.4);">Dung tích (ml)</label>
+                                <div style="font-size: 0.9rem; padding-left: 4rem;">100</div>
+                            </div>
+                            <div class="danh-muc">
+                                <label style="width: 6rem; color: rgba(0, 0, 0, 0.4);">Xuất xứ</label>
+                                <div style="font-size: 0.9rem; padding-left: 4rem;">Việt Nam</div>
+                            </div>
+                            <div class="danh-muc">
+                                <label style="width: 6rem; color: rgba(0, 0, 0, 0.4);">Kho hàng</label>
+                                <div style="font-size: 0.9rem; padding-left: 4rem;">134</div>
+                            </div>
+                            <div class="danh-muc">
+                                <label style="width: 6rem; color: rgba(0, 0, 0, 0.4);">Gửi từ</label>
+                                <div style="font-size: 0.9rem; padding-left: 4rem;">Hà Nội</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div
+                                style="background-color: #F5F5F5; height:3rem; width: 70%; padding-left: 2rem; display: flex; margin-top: 1rem;">
+                                <h3 style="font-weight: 500; ">Mô Tả Sản Phẩm</h3>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mo-ta" style="padding: 1.5rem 0 0 4rem;width: 60%;">
+                        <p style="line-height: 1.8rem; color: rgba(0,0,0,.8); font-size: 0.9rem;"></span>
+                           <h3>Tinh dầu nước hoa CODEDECO KILL THIS LOVE – 100ml</h3>  <br>
+                            <strong>Nhóm hương:</strong> Gia vị phương Đông.<br>
+                            <strong>Giới tính:</strong> Unisex.<br>
+                            <strong>Độ lưu hương:</strong> Lâu – 6 giờ đến 8 giờ (tùy theo mùi hương và môi trường sử dụng), sử dụng trên quần áo thể lên tới 12h.<br>
+                            <strong>Độ toả hương:</strong> Trong vòng bán kính 1 cánh tay.<br>
+                            <strong>Thời điểm khuyên dùng:</strong> Ngày, Đêm, Xuân, Thu, Đông.<br>
+                            <strong>Phong cách:</strong> Hấp dẫn, thu hút, trưởng thành.<br>
+                            <h3>Ưu điểm nổi bật</h3><br>
+                            Kill This Love sẽ là một mùi hương không thể thiếu nếu bạn là một cô nàng quyến rũ thu hút chứa đựng bên trong một sự mạnh mẽ, quyết đoán; hay một chàng trai được hấp dẫn bởi sự nam tính, trưởng thành. Kill This Love vừa ngọt ngào, vừa mạnh mẽ sẽ khiến bạn trở nên thú vị và gây hiếu kỳ với mọi người xung quanh.<br>
+                            <h3>TẦNG HƯƠNG</h3><br>
+                            Hương Đầu: Tiêu hồng, Hoa cam Neroli, Quả chanh vàng.<br>
+                            Hương giữa: Rượu rum, Cỏ hương bài.<br>
+                            Hương cuối: Vanila, Thuốc lá, Bồ đề.<br>
+                            Kill This Love mở đầu bởi sự nồng ấm của tiêu và được làm tươi bởi hương của cam Neroli và chanh vàng. Rươu Rum mang sự say sưa, sôi nổi điểm xuyết thêm chút hương hoa cỏ hương bài. Kết thúc note hương bằng sự ngọt ngào, quyến rũ của hương vani đem lại, tăng thêm cảm gíac ấm áp của Rum mang lại. Phảng phất đâu đó có chút trầm lắng của một chút hương thuốc lá kết hợp cùng gỗ bồ đề.<br>
+                            <h3>HƯỚNG DẪN SỬ DỤNG</h3><br>
+                            – Lăn ở những vùng cơ thể để hương thơm khuếch tán và giữ mùi được lâu nhất như cổ tay, sau gáy, khuỷu tay…<br>
+                            – Hạn chế lăn trực tiếp lên quần áo màu trắng và đồ trang sức.<br>
+                            <h3>HẠN SỬ DỤNG VÀ BẢO QUẢN</h3><br>
+                            - Hạn sử dụng: 6 tháng kể từ khi mở nắp cho lần xịt đầu tiên.<br>
+                            - Hướng dẫn bảo quản: Tránh nhiệt độ cao và ánh nắng trực tiếp, thoáng mát.<br>
+                            <strong>Lưu ý: </strong> Thương hiệu CODEDECO đã được đăng kí bảo hộ của pháp luật nghiêm cấm sao chép dưới mọi hình thức, ngoài ra sản phẩm bên shop không phải là nước hoa chiết từ các hãng khách hàng lưu ý kĩ trước khi đặt hàng để tránh sự nhầm lẫn. Sản phẩm của shop là tinh dầu nước hoa nên nồng độ tinh dầu đậm sẽ bị nồng 15 – 30p tùy theo đặc trưng mùi. Chúng mình khuyến khích khách hàng nên sử dụng trên quần áo để đảm bảo độ lưu hương. Xin cám ơn !<br>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="grid">
+                <div class="grid-row grid-row-footer">
+                    <div class="grid-column-2-4">
+                        <h3 class="footer-heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+
+                                <a href="" class="footer-list-item-link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">Shop Mall</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid-column-2-4">
+                        <h3 class="footer-heading">Giới thiệu</h3>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">Giới thiệu</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">Điều khoản</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="grid-column-2-4">
+                        <h3 class="footer-heading">Theo dõi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">
+                                    <i class="fab fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">
+                                    <i class="fab fa-instagram-square"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">
+                                    <i class="fab fa-discord"></i>
+                                    Discord
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="grid-column-2-4">
+                        <h3 class="footer-heading">
+                            Danh mục</h3>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">Nước hoa nam</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">Nước hoa nữ</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">Tinh Dầu Thiên Nhiên</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">Mẫu Thử Trải Nghiệm 2ml</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">Tinh Dầu Treo Xe</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="over">
+            <p style="font-size: 0.8rem; color: black">@ 2023-Bản quyền thuộc về DODO</p>
+        </div>
+
+    </div>
+    <div class="modal" id="1">
+        <div class="modal-overlay" onclick="back()"></div>
+        <div class="modal-body" id="dk">
+
+            <div style="padding-left: 30px; padding-right: 30px;">
+
+                <div class="form">
+
+                    <h3 class="form-heading">Đăng ký</h3>
+                    <span class="form-switch" onclick="pdn()">Đăng nhập</span>
+
+                </div>
+
+                <div class="form-form">
+                    <div class="form-group">
+                        <input type="text" class="form-input" id="name1" placeholder="Nhập tên tài khoản của bạn">
+                    </div> <br>
+                    <div class="form-group">
+                        <input type="password" class="form-input" placeholder="Nhập mật khẩu của bạn">
+                    </div> <br>
+                    <div class="form-group">
+                        <input type="password" class="form-input" placeholder="Nhập lại mật khẩu">
+                    </div>
+
+                </div> <br>
+
+                <div class="form-law">
+                    <p style="font-size: 0.8rem; text-align: center;">
+                        Bằng việc đăng ký, bạn đã đồng ý với... về
+                        <a href="" class="form-link">Điều khoản dịch vụ</a> &
+                        <a href="" class="form-link">Chính sách bảo mật</a>
+                    </p>
+                </div>
+                <div class="form-button">
+                    <button class="btn" style="margin-right: 8px;" onclick="back()">Trở Lại</button>
+                    <button class="btn" style="background-color: #EE0000; color: white;" onclick="fdk()">Đăng
+                        Ký</button>
+                </div>
+            </div>
+
+            <div class="form-conect">
+                <a href="" class="conect conect-fb">
+                    <i class="fab fa-facebook-square" style="font-size: 1.5rem;"></i>
+                    <span style="margin-left: 15px;">Kết nối với Facebook</span>
+                </a>
+                <a href="" class="conect conect-gg">
+                    <i class="fab fa-google" style="font-size: 1.5rem;"></i>
+                    <span style="margin-left: 15px; color: gray;">Kết nối với Google</span>
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="modal-body" id="dn">
+
+            <div style="padding-left: 30px; padding-right: 30px;">
+
+                <div class="form">
+
+                    <h3 class="form-heading">Đăng nhập</h3>
+                    <span class="form-switch" onclick="pdk()">Đăng ký</span>
+
+                </div>
+
+                <div class="form-form">
+                    <div class="form-group">
+                        <input type="text" class="form-input" id="name2" placeholder="Nhập tên tài khoản của bạn">
+                    </div> <br>
+                    <div class="form-group">
+                        <input type="password" class="form-input" placeholder="Nhập mật khẩu của bạn">
+                    </div> <br>
+
+
+                </div>
+
+                <div class="form-law">
+                    <div class="form-help">
+                        <a href="" class="form-help-link" style="color: #EE0000;">Quên mật khẩu</a> |
+                        <a href="" class="form-help-link">Cần trợ giúp?</a>
+                    </div> <br> <br> <br>
+                </div>
+                <div class="form-button">
+                    <button class="btn" style="margin-right: 8px;" onclick="back()">Trở Lại</button>
+                    <button class="btn" style="background-color: #EE0000; color: white;" onclick="fdn()">Đăng
+                        Nhập</button>
+                </div>
+
+            </div>
+
+            <div class="form-conect">
+                <a href="" class="conect conect-fb">
+                    <i class="fab fa-facebook-square" style="font-size: 1.5rem;"></i>
+                    <span style="margin-left: 15px;">Kết nối với Facebook</span>
+                </a>
+                <a href="" class="conect conect-gg">
+                    <i class="fab fa-google" style="font-size: 1.5rem;"></i>
+                    <span style="margin-left: 15px; color: gray;">Kết nối với Google</span>
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <script>
+        function  addToCart(item) {
+            debugger;          
+             item.quantity = 1;
+             console.log(item.quantity);
+             var list;
+             if (localStorage.getItem('cart') == null) {
+                 list = [item];
+             } else {
+                 list = JSON.parse(localStorage.getItem('cart')) || [];
+             let ok = true;
+             for (let x of list) {
+                 if (x.id == item.id) {
+                 x.quantity += 1;
+                 ok = false;
+                 break;
+                 }
+             }
+             if(ok){
+                 list.push(item); 
+             } 
+             }
+             localStorage.setItem('cart', JSON.stringify(list));
+             alert("Đã thêm vào giở hàng");
+         }
+    </script>
+
+
+</body>
+
+</html>

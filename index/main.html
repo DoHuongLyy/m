@@ -1,0 +1,115 @@
+<!Doctype html>
+<html>
+
+<head>
+    <title>Admin</title>
+    <meta charset="urf-8">
+    <link rel="stylesheet" href="/css/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/Jquery.js"> </script>
+</head>
+
+<body>
+    <div class="grid">
+        <div class="colum2">
+
+            <h3 style="padding-left: 25px;">Menu</h3>
+            <a href="">Bảng điều khiển</a>
+            <a href="/index/Danhmuc.html">Danh mục</a>
+            <a href="User.html">Quản lý người dùng</a>
+            <a href="/index/QLdonhang.html">Quản lý đơn hàng</a>
+            <a href="/index/login.html">Đăng xuất</a>
+
+
+        </div>
+        <div class="colum10">
+
+            <div class="header">
+               
+                
+                <i class="fas fa-home"></i>
+                <p style="padding-left: 20px;">Trang chủ</p>
+
+                
+                 
+                <div style="position: absolute; right: 40px; display: flex;">
+
+                    <img src="/hình ảnh/avatar.jpg" alt="">
+                    <span>Admin</span>
+                </div>
+                
+                   
+               
+            </div>
+
+            <div class="box-main">
+                <div class="box box1" style="background-color: #ffb748;">
+                    <a href="">
+
+                        <div class="box-content">
+                            <i class="fas fa-shopping-cart"></i> <br><br>
+                            Tổng số đơn hàng
+                        </div>
+                    </a>
+                </div>
+                <div class="box box2" style="background-color: #2255a4;">
+                    <a href="">
+                        <div class="box-content">
+                            <i class="fab fa-windows"></i> <br><br>
+                            Tổng số sản phẩm
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="box box4" style="background-color:  #2255a4;">
+                    <a href="">
+                        <div class="box-content">
+                            <i class="fas fa-dollar-sign"></i> <br><br>
+                            Quản lý doanh thu
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+            <script>
+                window.onload = function () {
+            
+                    var chart = new CanvasJS.Chart("bieudo", {
+                        
+                        animationEnabled: true,	
+                        title: {
+                            text: "Biểu đồ doanh thu 7 ngày gần đây"
+                        },
+                        data: [
+                            {
+                                // Change type to "bar", "area", "spline", "pie",etc.
+                                type: "column",
+                                dataPoints: [
+                                    { label: "01/06", y: 1000 },
+                                    { label: "02/06", y: 1500 },
+                                    { label: "03/06", y: 2500 },
+                                    { label: "04/06", y: 3000 },
+                                    { label: "05/06", y: 1800 },
+                                    { label: "06/06", y: 2600 },
+                                    { label: "07/06", y: 1900 },
+                                ]
+                            }
+                        ]
+                    });
+                    chart.render();
+
+                }
+            </script>
+            <div id="bieudo" style="height: 370px; width: 58%; margin: 20px;"></div>
+            
+
+
+
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>

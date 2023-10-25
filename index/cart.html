@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Giỏ hàng</title>
+    <meta charset="urf-8">  
+    <link rel="stylesheet" href="/css/fontawesome-free-5.15.3-web/css/all.min.css">
+    <link rel="stylesheet" href="/css/Trang chu.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/cart.css">
+   
+    <!-- <script src="/js/jquery-3.6.0.min.js"></script> -->
+    <!-- <script src="/js/cart.js"></script> -->
+    <script src="/js/jquery-3.6.0.min.js"></script>
+    
+
+</head>
+
+<body>
+    <div>
+        <header class="header">
+            <div class="grid" style="color: white;">
+                <nav class="header__navbar">
+                    <ul class="header__navbar-list">
+                            <div class="QR-code">
+                                
+                                <div class="QR-app">
+                                    <a href="" class="down-app">
+                                        <img src="/hình ảnh/app store.png" class="img-app" alt="">
+                                    </a>
+                                    <a href="" class="down-app">
+                                        <img src="/hình ảnh/google.png" class="img-app" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        
+                        <li class="header__navbar-item">
+                            <span style="cursor: text;">Kết nối</span>
+                            <a href="" class="icon-link"><i class="icon fab fa-facebook-messenger"></i></a>
+                            <a href="" class="icon-link"><i class="icon fab fa-instagram-square"></i></a>
+                        </li>
+                    </ul>
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-item">
+
+                            <a href="" class="header__navbar-item-link icon-link">
+                                <i class="icon fas fa-bell"></i>
+                                Thông Báo
+                            </a>
+                            <div class="header-noti">
+                                <header class="noti">
+                                    <h3
+                                        style="color: #999; margin-left: 12px; font-weight: 500; font-size: 0.9rem; cursor: text;">
+                                        Thông Báo Mới Nhận</h3>
+                                </header>
+                                 
+                                <footer class="footer-noti">
+                                    <a href="" class="show-all">Xem Tất Cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="header__navbar-item">
+                            <a href="" class="header__navbar-item-link icon-link">
+                                <i class="icon fas fa-question-circle"></i>
+                                Hỗ Trợ
+                            </a>
+                        </li>
+                        <li class="header__navbar-item " style="font-weight: 500;"><span>DODO</span></li>|
+                        <li class="header__navbar-item " style="font-weight: 500;"><a href="/index/Trang chu.html" style="text-decoration:none;"><span style="color:white; ">Đăng xuất</span></a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-with-search">
+                    <div class="header-logo">
+                        <a href="/index/Trang chu.html">
+
+                            <img src="/hình ảnh/logo'.png" class="logo" alt="">
+                        </a>
+                    </div>
+                    <div class="header-search">
+                        <input type="text" class="search-input" placeholder="Tìm kiếm">
+                        <button class="btn-search">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+
+                    <div class="header-catch">
+                        <a onclick="XoaCart()" href="/index/cart.html">
+                            <i class="fas fa-trash"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+        </header>                   
+        <div style="background-color: #f5f5f5;">
+            <div class="content">
+                <table class="tb" cellpadding="10">
+                    <thead>
+                        <tr>
+                            <th>Hình ảnh</th>
+                            <th width=290px;>Tên sản phẩm</th>
+                            <th>Giá</th>
+                            <th>Số lượng</th>
+                            <th>Đơn giá</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="listCart">
+                    </tbody>
+                </table>    
+                <div style="padding-top: 20px">
+                    <div>
+                        <span>Tổng Tiền:</span>
+                        <span id="spTong" class="total-price">0₫</span>
+                    </div>
+                    <button onclick="window.location.href='thanhtoan.html';" class="btn" style="background-color: black; color: white;">Thanh Toán</button>
+                    <button onclick="updateCart()" class="btn" style="background-color: black; color: white;">Cập nhật giỏ hàng</button>
+                  
+                    <button onclick="window.location.href='Trang chu.html';" class="btn" style="background-color:black; color: white; margin-left: 410px;">Mua Thêm</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="grid">
+                <div class="grid-row grid-row-footer">
+                    <div class="grid-column-2-4">
+                        <h3 class="footer-heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">Trung tâm trợ giúp</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">Shop Mall</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="grid-column-2-4">
+                        <h3 class="footer-heading">Giới thiệu</h3>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">Giới thiệu</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">Điều khoản</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="grid-column-2-4">
+                        <h3 class="footer-heading">Theo dõi</h3>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">
+                                    <i class="fab fa-facebook"></i>
+                                    Facebook
+                                </a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">
+                                    <i class="fab fa-instagram-square"></i>
+                                    Instagram
+                                </a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">
+                                    <i class="fab fa-discord"></i>
+                                    Discord
+                                </a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="grid-column-2-4">
+                        <h3 class="footer-heading">
+                            Danh mục</h3>
+                        <ul class="footer-list">
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">Nước hoa nam</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">Nước hoa nữ</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">Tinh Dầu Thiên Nhiên</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">Mẫu Thử Trải Nghiệm 2ml</a>
+                            </li>
+                            <li class="footer-list-item">
+                                <a href="" class="footer-list-item-link">Tinh Dầu Treo Xe</a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="over">
+            <p style="font-size: 0.8rem; color: black;">@ 2023-Bản quyền thuộc về DODO</p>
+        </div>
+
+    </div>
+
+    <script>
+
+        var list = JSON.parse(localStorage.getItem('cart'));
+
+        function LoadData(){
+            var str = "";
+            var n = 0;
+            var t = 0;
+            for (x of list) {
+                t += x.price * x.quantity;
+                str += `  <tr>
+                       
+                        <td><img style="width: 50px; height: 50px;" src="`+ x.image + `"> </td>
+                        <td>`+ x.name + `</td>
+                        <td class="new-price">`+ x.price + `₫</td>
+                        <td> 
+                            <button onclick="Giam(`+ x.id + `)">-</button>
+                            <input id="q_`+ Number(x.id)+`" onchange="updateQuantity(`+ x.id + `)" type="text" value="`+ x.quantity + `" style="width: 15px;" >
+                            <button onclick="Tang(`+ x.id + `)">+</button>
+                        </td>
+                        <td class="new-price">`+ (x.price * x.quantity) + `₫</td>
+                        <td><button style="color: #EE0000;" onclick="Xoa(`+ x.id + `)" style="font-size:30px;color:red;">Xóa</button></td>
+                    </tr>
+                 `;
+            }
+            document.getElementById("listCart").innerHTML = str;
+            $("#spTong").text(t);
+        }
+        function XoaCart() {
+            localStorage.setItem('cart', null);
+            location.reload();
+        }
+        function Xoa(id) {
+            var index = list.findIndex(x => x.id == id);
+            if (index >= 0) {
+                list.splice(index, 1);
+            }
+            LoadData();
+        }
+        function updateCart() {
+            localStorage.setItem('cart', JSON.stringify(list));
+             alert("Đã cập nhật thông tin giở hàng thành công");
+        }
+        function Tang(id) {
+            var index = list.findIndex(x => x.id == id);
+            if (index >= 0) {
+                list[index].quantity += 1; 
+            }
+            LoadData();
+        }
+        function Giam(id) {
+            var index = list.findIndex(x => x.id == id);
+            if (index >= 0 && list[index].quantity >=1) {
+                list[index].quantity -= 1; 
+            }
+            LoadData();
+        }
+        function updateQuantity(id) {
+            var quantity = Number($('#q_'+id).val());
+            var index = list.findIndex(x => x.id == id);
+            if (index >= 0 && list[index].quantity >=1) {
+                list[index].quantity = quantity; 
+            }
+            LoadData();
+        }
+
+        LoadData();
+    </script>
+
+</body>
+
+</html>

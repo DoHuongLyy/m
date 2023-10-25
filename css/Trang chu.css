@@ -1,0 +1,378 @@
+/*Keyframes*/
+@keyframes noti {
+    from{
+        transform: scale(0);
+    }
+    to{
+        transform: scale(1);
+    }
+    
+}
+@keyframes QR{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+
+.header{
+    width: 100%;
+    height: 120px;
+    background-color: black;
+    
+}
+.header__navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.header__navbar-list{
+    padding-left: 0px; 
+    margin: 8px; 
+}
+.header__navbar-item,
+.header__navbar-item-link{
+    list-style: none;
+    display: inline-block;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
+.header__navbar-item,
+.header__navbar-item-link,
+.icon-link{
+    display: inline-flex;
+    align-items: center;
+}
+.header__navbar-item:hover,
+.header__navbar-item-link:hover,
+.icon-link:hover{
+    color:dimgrey;
+    cursor: pointer;
+}
+.header__navbar-item{
+    margin-left: 8px;
+    margin-right: 8px;
+    position: relative;
+}
+.header__navbar-item:hover .header-noti{
+    display: block;
+}
+.header__navbar-QR:hover .QR-code{
+    display: block; 
+    animation: QR ease-in 1s;
+}
+
+.grid{
+    width: 1200px;
+    margin: 0 auto;
+  
+}
+.icon-link{
+    color:white;
+    text-decoration: none;
+   
+}
+.icon{
+    font-size: 1.1rem;
+    margin: 0 4px;
+}
+
+
+
+/*QR code*/
+.QR-code{
+    width: 120px;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    border-radius: 2px; 
+    display: none;
+}
+.QR-app{
+    display: flex;
+    position: absolute;
+}
+.down-app{
+    height: 13px;
+}
+.img-app{
+    height: 100%;
+    width: 95%;
+}
+/*noti*/
+.header-noti{
+    position: absolute;
+    top: 100%;
+    width: 404px;
+    background-color: white;
+    right: 0;
+    border: 1px solid #d3d3d3;
+    border-radius: 2px;
+    display: none;
+    animation: noti ease 0.17s;
+    z-index: 1;
+}
+
+.noti{
+    height: 40px;
+  
+} 
+
+.noti-list{
+    padding-left: 0;
+    background-color: #FFFFCC;
+    list-style: none;
+} 
+
+.noti-item:hover{
+    background-color: #EEEEEE;
+    z-index: 1;
+} 
+
+.noti-link{
+    display: flex;
+    text-decoration: none;
+} 
+
+.noti-img{
+    width: 60px;
+    height: 40px;
+    padding-left: 12px;
+} 
+
+.noti-info{
+    margin-left: 12px;
+} 
+
+.noti-name{
+    display: block;
+    font-size: 1rem;
+    color: #000;
+    font-weight: 500;
+} 
+
+.noti-descriotion{
+    display: block;
+    font-size: 0.8rem;
+    color: #765f6e;
+    margin-top: 3px;
+} 
+.footer-noti{
+    height: 30px;
+    text-decoration: none;
+    display: flex;
+}
+.show-all{
+    text-decoration: none; 
+    color: #000; 
+    margin: auto; 
+}
+/*modal*/
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    animation: noti ease 0.17s;
+}
+.modal-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0, 0.4);
+
+}
+.modal-body{
+    width: 450px;
+    height: 400px;
+    margin: auto;
+    background-color:white;
+    position: relative;
+    border-radius: 3px;
+}
+/*đăng nhập, đăng ký*/
+.form{
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+.form-heading{
+    font-size: 1.5rem;
+    font-weight: 540;
+}
+.form-switch{
+    font-weight: 500;
+    cursor: pointer;
+    color: red;
+}
+.form-form{
+    padding-right: 20px;
+}
+.form-input{
+    width: 100%;
+    height: 30px;
+    padding-left: 12px;
+}
+.form-link{
+    text-decoration: none;
+    color: #EE0000;
+}
+.btn{
+    width: 142px;
+    height: 36px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.form-button{
+    display: flex;
+    justify-content: flex-end;
+}
+.btn:hover{
+    background-color: rgba(0,0,0, 0.4);
+}
+.form-conect{
+    background-color: #F5F5F5;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.conect{
+   width: 200px;
+   height: 32px;
+    text-decoration: none;
+    border-radius: 2px;
+    font-size: 0.8rem;
+    font-weight: 400;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+}
+.conect-fb{
+    background-color: #3366CC;
+    color: white;
+}
+.conect-gg{
+    background-color: white;
+}
+.conect:hover{
+    background-color: rgba(0,0,0, 0.4);
+}
+.form-help{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.form-help-link{
+    text-decoration: none;
+    margin: 0 16px;
+}
+.header-with-search{
+    height: 84px;
+    display: flex;
+    align-items: center;
+
+
+}
+.header-logo{
+    width: 200px;
+}
+.logo{
+    width: 100px;
+    height: 88px;
+}
+.header-search{
+    height: 40px;
+    flex: 1;
+    border-radius: 2px; 
+    display: flex;
+    align-items: center;
+    background-color: white;
+
+    position: relative;
+}
+.dropdown-content{
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    top:40px;
+    border: 1px solid #ddd;
+    background-color: white;
+    z-index: 1;
+    overflow: auto;
+    display: none;
+}
+.header-catch{
+    width: 150px;
+    text-align: center;
+}
+.fa-shopping-cart{
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: white;
+}
+.search-input{
+    width: 100%;
+    height: 38px;
+    font-size: 0.9rem;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    border-radius: 2px;
+
+
+   
+}
+.btn-search{
+    width: 60px;
+    background-color: black;
+    border: none;
+    color: white;
+    height: 34px;
+    border-radius: 3px;
+    margin-right: 3px;
+} 
+.btn-search:hover{
+    cursor: pointer;
+    background-color: black;
+}
+.fa-shopping-cart{
+    font-size: 1.5rem;
+}
+.list-name-over{
+    height: 50px; 
+    background-color: black;
+    display: flex;
+    color: white;
+    width: 87.5%;
+}
+.list-name-item{
+    margin: auto;
+    font-weight: 600;
+}
+.search-content{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    padding: 10px 0 10px 20px;
+}
+.search-content-img{
+    width: 20%;
+    text-align: center;
+}
+.search-noidung{
+   width: 80%;
+   padding-right: 150px;
+}
+.dropdown-content a{
+    text-decoration: none;
+}
+.show {display: block;}
+

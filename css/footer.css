@@ -1,0 +1,31 @@
+.footer{
+    padding-top: 12px;
+    border-top: 4px solid #f53e2d;
+}
+.grid-row-footer{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-list{
+    list-style: none;
+    padding-left: 0;
+}
+.footer-heading{
+    font-size: 1rem;
+}
+.footer-list-item-link{
+    text-decoration: none;
+    font-size: 0.775rem;
+    line-height: 1.4rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+.footer-list-item-link:hover{
+    color: #f53e2d;
+}
+.over{
+    height: 50px;
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
