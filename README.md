@@ -24,6 +24,7 @@ Git là một hệ thống VCS (Version Control System) dùng để quản lý v
  Tốc độ và hiệu suất: hoạt động nhanh chóng với các thao tác như commit, branch, merge.
  Làm việc cùng một lúc trên nhiều dự án: cho phép làm việc trên nhiều dự án khác nhau mà không gây ra xung đột.
  Lịch sử linh hoạt: chi tiết tất cả những thay đổi, giúp theo dõi thông tin và xem thông tin về từng commit.
+
 • *Nhược điểm của Git:*
  Học và sử dụng khó khăn ban đầu
  Xung đột (Conflict) trong merge: merge thay đổi từ nhiều nhánh có thể xảy ra xung đột khi hai phiên bản của mã nguồn có thay đổi gây tranh cãi. Xử lí xung đột đôi khi đòi hỏi sự can thiệp thủ công.
